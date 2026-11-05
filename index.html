@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Finance | Sua inteligência financeira pessoal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand" title="Voltar ao início">
+        <div class="brand-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="brand-text">aura<span>.finance</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#produtos">Produtos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary">Entrar</button>
+        <button class="btn btn-primary">Começar Grátis</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Inteligência Artificial Financeira Conectada</span>
+        <span class="badge-tag">NOVO</span>
+      </div>
+
+      <h1 class="hero-title">
+        Uma inteligência que organiza e multiplica toda a sua 
+        <span class="gradient-text">vida financeira em um só lugar.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Conecte seus bancos, investimentos e cartões via Open Finance. 
+        Deixe agentes autônomos de IA monitorarem seus gastos, evitarem cobranças abusivas e potencializarem seu rendimento diário.
+      </p>
+
+      <div class="hero-cta-group">
+        <div class="cta-input-wrapper">
+          <input type="email" placeholder="Digite seu melhor e-mail..." class="cta-input">
+          <button class="btn btn-primary btn-cta">Criar conta gratuita</button>
+        </div>
+        <span class="cta-hint">✓ Sem cartão de crédito necessário • 100% regulamentado pelo Banco Central</span>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="institutions-bar">
+        <p class="bar-caption">Compatível com mais de 100 instituições e fintechs parceiras</p>
+        <div class="partners-grid">
+          <div class="partner-item"><span>Nubank</span></div>
+          <div class="partner-item"><span>Itaú</span></div>
+          <div class="partner-item"><span>Bradesco</span></div>
+          <div class="partner-item"><span>Santander</span></div>
+          <div class="partner-item"><span>Inter</span></div>
+          <div class="partner-item"><span>BTG Pactual</span></div>
+          <div class="partner-item"><span>XP Investimentos</span></div>
+        </div>
+      </div>
+
+      <!-- Interactive Mockup / Dashboard Preview -->
+      <div class="hero-preview-container">
+        <div class="dashboard-mockup">
+          <!-- Mockup Top Bar -->
+          <div class="mockup-header">
+            <div class="window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mockup-search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <span>Pergunte qualquer coisa ao Aura AI... "Quanto gastei com delivery este mês?"</span>
+            </div>
+            <div class="user-pill">
+              <div class="avatar">AP</div>
+              <span>Alan • Conectado</span>
+            </div>
+          </div>
+
+          <!-- Mockup Body Grid -->
+          <div class="mockup-grid">
+            <!-- Left: Financial Overview -->
+            <div class="mock-card balance-card">
+              <div class="card-head">
+                <span class="label">Patrimônio Consolidado</span>
+                <span class="tag-pill positive">+14.2% a.a.</span>
+              </div>
+              <div class="balance-val">R$ 148.920<span class="cents">,50</span></div>
+              
+              <div class="balance-breakdown">
+                <div class="b-item">
+                  <span class="dot-indicator blue"></span>
+                  <div class="b-info">
+                    <span class="b-name">Investimentos (CDB 112% CDI)</span>
+                    <span class="b-val">R$ 96.400,00</span>
+                  </div>
+                </div>
+                <div class="b-item">
+                  <span class="dot-indicator green"></span>
+                  <div class="b-info">
+                    <span class="b-name">Contas Correntes (4 bancos)</span>
+                    <span class="b-val">R$ 38.250,50</span>
+                  </div>
+                </div>
+                <div class="b-item">
+                  <span class="dot-indicator purple"></span>
+                  <div class="b-info">
+                    <span class="b-name">Faturas Previstas (Março)</span>
+                    <span class="b-val">-R$ 14.270,00</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mini chart simulator -->
+              <div class="chart-bars">
+                <div class="bar-col" style="--height: 40%"><span>Out</span></div>
+                <div class="bar-col" style="--height: 55%"><span>Nov</span></div>
+                <div class="bar-col" style="--height: 48%"><span>Dez</span></div>
+                <div class="bar-col" style="--height: 72%"><span>Jan</span></div>
+                <div class="bar-col" style="--height: 85%"><span>Fev</span></div>
+                <div class="bar-col active-bar" style="--height: 100%"><span>Mar</span></div>
+              </div>
+            </div>
+
+            <!-- Right: AI Chatbot Assistant Agent -->
+            <div class="mock-card agent-chat-card">
+              <div class="chat-header">
+                <div class="ai-avatar">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </div>
+                <div class="ai-status">
+                  <strong>Aura Advisor</strong>
+                  <span class="online-indicator">Monitorando 14 cartões e contas</span>
+                </div>
+                <span class="badge-ai">IA ATIVA</span>
+              </div>
+
+              <div class="chat-messages">
+                <div class="message user-msg">
+                  <p>Aura, como está o fluxo das minhas faturas este mês?</p>
+                  <span class="msg-time">10:42</span>
+                </div>
+
+                <div class="message aura-msg">
+                  <p>Você tem <strong>3 faturas vencendo até o dia 15</strong>, totalizando R$ 8.420. Seu saldo disponível na conta rendeira cobrirá o total automaticamente com folga.</p>
+                  <div class="insight-box alert-box">
+                    <div class="insight-icon">⚠️</div>
+                    <div class="insight-text">
+                      <strong>Assinatura duplicada detectada:</strong> Você foi cobrado duas vezes pelo serviço <em>Streaming Max</em> em bancos diferentes. Deseja contestar com 1 clique?
+                    </div>
+                  </div>
+                  <div class="quick-replies">
+                    <button class="chip-btn">Sim, contestar</button>
+                    <button class="chip-btn">Ver extrato detalhado</button>
+                  </div>
+                  <span class="msg-time">10:43</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars / How it works -->
+  <section id="como-funciona" class="section-padded">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">POR QUE AURA?</span>
+        <h2 class="section-title">Controle financeiro inteligente sem planilhas chatas</h2>
+        <p class="section-description">A Aura conecta as pontas soltas da sua vida financeira para você tomar decisões com dados reais e automação.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon bg-blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Open Finance Unificado</h3>
+          <p>Conecte todos os seus bancos, corretoras e contas digitais em menos de 2 minutos. Saldo real, extratos e histórico sem precisar alternar entre aplicativos.</p>
+          <ul class="feature-list">
+            <li>Sincronização automática em tempo real</li>
+            <li>Categorização inteligente de compras</li>
+            <li>Visão unificada de faturas futuras</li>
+          </ul>
+        </div>
+
+        <div class="feature-card highlighted-card">
+          <div class="feature-badge">EXCLUSIVO</div>
+          <div class="feature-icon bg-indigo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+          </div>
+          <h3>Agentes Autônomos de IA</h3>
+          <p>Não somos apenas um app de gráficos. Nossos agentes cruzam taxas, prevêem saldo futuro, alertam sobre fraudes e mostram exatamente onde economizar.</p>
+          <ul class="feature-list">
+            <li>Detecção de cobranças duplicadas</li>
+            <li>Previsão de fluxo de caixa em 30, 60 e 90 dias</li>
+            <li>Comandos via linguagem natural em português</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon bg-emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Rendimento Máximo Automático</h3>
+          <p>Seu dinheiro parado na conta nunca mais perde para a inflação. Aplique em reservas de liquidez diária com rendimentos superiores a 110% do CDI.</p>
+          <ul class="feature-list">
+            <li>Proteção do Fundo Garantidor de Crédito (FGC)</li>
+            <li>Liquidez diária para emergências</li>
+            <li>Zero taxa de custódia e sem pegadinhas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Showcase -->
+  <section id="produtos" class="section-padded bg-subtle">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">ECOSSISTEMA INTEGRADO</span>
+        <h2 class="section-title">Produtos desenhados para o seu patrimônio crescer</h2>
+        <p class="section-description">Aproveite soluções financeiras completas com a elegância que seu dinheiro merece.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-box">
+          <div class="product-content">
+            <span class="prod-badge">INVESTIMENTOS</span>
+            <h3>CDB Inteligente Aura 112% CDI</h3>
+            <p>Rentabilidade superior para o seu patrimônio com a tranquilidade da garantia pelo FGC até R$ 250 mil por CPF. Invista a partir de R$ 1,00 diretamente pelo painel.</p>
+            <div class="prod-stats">
+              <div class="stat-item">
+                <span class="stat-number">112%</span>
+                <span class="stat-caption">do CDI garantido</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">R$ 1</span>
+                <span class="stat-caption">Aporte mínimo</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">D+0</span>
+                <span class="stat-caption">Liquidez imediata</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-box highlight-product">
+          <div class="product-content">
+            <span class="prod-badge badge-brand">CARTÃO BLACK COM IA</span>
+            <h3>Cartão Aura Prime Mastercard Black</h3>
+            <p>O primeiro cartão com inteligência artificial nativa. Zero anuidade vitalícia, 3% de cashback automático e seu limite de crédito rendendo diariamente.</p>
+            <div class="prod-stats">
+              <div class="stat-item">
+                <span class="stat-number">3.0%</span>
+                <span class="stat-caption">Cashback em compras</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">R$ 0</span>
+                <span class="stat-caption">Anuidade para sempre</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">VIP</span>
+                <span class="stat-caption">Salas LoungeKey</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI / Savings Calculator -->
+  <section class="section-padded">
+    <div class="container">
+      <div class="calculator-card">
+        <div class="calc-header">
+          <span class="section-tag">SIMULE EM TEMPO REAL</span>
+          <h2>Veja quanto a Aura pode economizar e render para você</h2>
+          <p>Média calculada com base na eliminação de tarifas ocultas e rendimento otimizado a 112% do CDI.</p>
+        </div>
+
+        <div class="calc-body">
+          <div class="calc-controls">
+            <div class="slider-group">
+              <div class="slider-header">
+                <label>Saldo médio ou reserva atual:</label>
+                <span id="sliderVal" class="slider-display">R$ 25.000</span>
+              </div>
+              <input type="range" id="amountRange" min="2000" max="150000" step="1000" value="25000" class="range-slider">
+              <div class="range-limits">
+                <span>R$ 2.000</span>
+                <span>R$ 150.000</span>
+              </div>
+            </div>
+
+            <div class="slider-group">
+              <label>Prazo estimado:</label>
+              <div class="period-selector">
+                <button class="period-btn active" data-months="12">1 Ano</button>
+                <button class="period-btn" data-months="24">2 Anos</button>
+                <button class="period-btn" data-months="36">3 Anos</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <div class="result-box">
+              <span class="res-label">Ganho estimado com Aura</span>
+              <div class="res-value" id="calcYield">+ R$ 3.840,00</div>
+              <p class="res-sub">Em comparação com a poupança tradicional ou conta corrente comum.</p>
+              
+              <div class="comparison-row">
+                <div class="c-point">
+                  <span class="c-title">Na Aura (112% CDI):</span>
+                  <strong class="c-aura" id="totalAura">R$ 28.840,00</strong>
+                </div>
+                <div class="c-point">
+                  <span class="c-title">Na Poupança Comum:</span>
+                  <span class="c-old" id="totalOld">R$ 26.540,00</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block">Garantir esse rendimento</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & Compliance -->
+  <section id="seguranca" class="section-padded bg-subtle">
+    <div class="container">
+      <div class="security-wrapper">
+        <div class="sec-left">
+          <span class="section-tag">SEGURANÇA EM PRIMEIRO LUGAR</span>
+          <h2 class="section-title">Seus dados e seu dinheiro 100% protegidos</h2>
+          <p class="section-description">
+            A Aura opera dentro do ecossistema oficial do Open Finance do Banco Central do Brasil. 
+            Nós nunca temos acesso para movimentar ou transferir seus fundos sem sua expressa autorização.
+          </p>
+
+          <div class="sec-points">
+            <div class="sec-item">
+              <div class="sec-icon">🛡️</div>
+              <div>
+                <strong>Criptografia Bancária AES-256</strong>
+                <p>Todos os dados trafegam por canais seguros com certificado SSL de nível militar.</p>
+              </div>
+            </div>
+
+            <div class="sec-item">
+              <div class="sec-icon">🏛️</div>
+              <div>
+                <strong>Regulamentação Banco Central & LGPD</strong>
+                <p>Conformidade estrita com a Lei Geral de Proteção de Dados. Você pode revogar permissões a qualquer segundo.</p>
+              </div>
+            </div>
+
+            <div class="sec-item">
+              <div class="sec-icon">🔒</div>
+              <div>
+                <strong>Apenas leitura de extratos</strong>
+                <p>Nenhuma transação é feita sem sua biometria e confirmação prévia no aplicativo do seu banco original.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-right">
+          <div class="security-card-visual">
+            <div class="shield-badge">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Padrão Bancário Certificado</h3>
+            <p>Auditorias periódicas e compliance contínuo com os maiores bancos do país.</p>
+            <div class="cert-tags">
+              <span>Open Finance BACEN</span>
+              <span>ISO 27001</span>
+              <span>PCI-DSS Nível 1</span>
+              <span>Proteção FGC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padded">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">DÚVIDAS FREQUENTES</span>
+        <h2 class="section-title">Tudo o que você precisa saber</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como a IA da Aura sabe sobre meus gastos sem roubar minha senha?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Você nunca compartilha suas senhas bancárias com a Aura. A conexão é realizada via Open Finance oficial do Banco Central, onde você autoriza a leitura de dados dentro do próprio aplicativo do seu banco com total segurança.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O serviço da Aura é pago?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O plano básico da Aura é 100% gratuito e permite conectar até 3 instituições financeiras, receber alertas diários e usar o assistente de IA. Temos planos Premium para investidores com alto volume de contas e ferramentas avançadas de automação.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como funciona a garantia do FGC nos investimentos?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Todos os CDBs ofertados na plataforma contam com a garantia ordinária do Fundo Garantidor de Créditos (FGC), cobrindo até R$ 250.000 por CPF e por instituição financeira associada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso cancelar a sincronização quando quiser?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! A qualquer momento você tem a liberdade de revogar o consentimento e solicitar a exclusão definitiva dos seus dados nos termos da LGPD com apenas um clique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Final -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-cta-card">
+        <h2>Pronto para assumir o controle definitivo do seu dinheiro?</h2>
+        <p>Junte-se a milhares de pessoas que deixaram a inteligência artificial trabalhar a favor do seu bolso.</p>
+        <div class="cta-input-wrapper justify-center">
+          <input type="email" placeholder="Digite seu melhor e-mail..." class="cta-input">
+          <button class="btn btn-primary btn-cta">Criar conta grátis agora</button>
+        </div>
+        <p class="final-note">Leva menos de 2 minutos • Sem mensalidade no plano inicial</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="brand" title="Voltar ao início">
+          <div class="brand-symbol">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="brand-text">aura<span>.finance</span></span>
+        </a>
+        <p class="footer-desc">A plataforma de inteligência artificial financeira pessoal que centraliza, analisa e potencializa seu dinheiro.</p>
+        <p class="copyright">© 2026 Aura Finance Tecnologia Ltda. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <a href="#solucoes">Visão Geral</a>
+        <a href="#como-funciona">Agentes de IA</a>
+        <a href="#produtos">CDB 112% CDI</a>
+        <a href="#produtos">Cartão Prime</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Segurança</h4>
+        <a href="#seguranca">Open Finance Brasil</a>
+        <a href="#seguranca">Política de Privacidade (LGPD)</a>
+        <a href="#seguranca">Certificações de Segurança</a>
+        <a href="#seguranca">Fundo Garantidor de Crédito</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Cookies</a>
+        <a href="#">Contrato de Abertura</a>
+        <a href="#">Canal de Suporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
